@@ -1,5 +1,5 @@
 {
-  "name": "brower-or-node",
+  "name": "browser-or-node",
   "version": "1.0.0",
   "description": "Check where the code is running in the browser or node.js",
   "main": "./lib/index.js",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flexdinesh/brower-or-node.git"
+    "url": "git+https://github.com/flexdinesh/browser-or-node.git"
   },
   "keywords": [
     "npm",
@@ -34,9 +34,9 @@
   "author": "Dineshkumar Pandiyan <flexdinesh@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flexdinesh/brower-or-node/issues"
+    "url": "https://github.com/flexdinesh/browser-or-node/issues"
   },
-  "homepage": "https://github.com/flexdinesh/brower-or-node#readme",
+  "homepage": "https://github.com/flexdinesh/browser-or-node#readme",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
