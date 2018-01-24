@@ -1,5 +1,5 @@
 # Browser or Node.js
-[![Build Status](https://travis-ci.org/flexdinesh/brower-or-node.svg?branch=master)](https://travis-ci.org/flexdinesh/brower-or-node)
+[![Build Status](https://travis-ci.org/flexdinesh/browser-or-node.svg?branch=master)](https://travis-ci.org/flexdinesh/browser-or-node)
 [![npm version](https://badge.fury.io/js/brower-or-node.svg)](https://www.npmjs.com/package/brower-or-node)
 [![dependencies Status](https://david-dm.org/flexdinesh/brower-or-node/status.svg)](https://david-dm.org/flexdinesh/brower-or-node)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
