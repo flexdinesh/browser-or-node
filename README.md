@@ -1,6 +1,7 @@
 # Browser or Node.js
 
 [![Build Status](https://travis-ci.org/flexdinesh/browser-or-node.svg?branch=master)](https://travis-ci.org/flexdinesh/browser-or-node)
+[![npm version](https://badge.fury.io/js/browser-or-node.svg)](https://www.npmjs.com/package/browser-or-node)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
