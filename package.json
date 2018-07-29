@@ -9,7 +9,7 @@
     "test:only": "cross-env BABEL_ENV=commonjs mocha --require babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
     "test:examples": "node examples/",
-    "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --require babel-core/register --recursive",
+    "cover": "cross-env BABEL_ENV=commonjs istanbul cover node_modules/mocha/bin/_mocha -- --require babel-core/register --recursive",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
