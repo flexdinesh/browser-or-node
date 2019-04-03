@@ -1,4 +1,8 @@
-/* global window self */
+// HELP!
+// self.importScripts(...) imports the script, but then Chrome throws
+// an error on export {...} syntax
+
+// self.importScripts('browser-or-node.js');
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
 
@@ -14,8 +18,6 @@ const isNode =
   process.versions != null &&
   process.versions.node != null;
 
-export {
-  isBrowser,
-  isWebWorker,
-  isNode
-};
+onmessage = function(e) {
+  postMessage( [isBrowser, isWebWorker, isNode] );
+}
