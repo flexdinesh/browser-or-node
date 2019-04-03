@@ -1,6 +1,6 @@
 {
   "name": "browser-or-node",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Check where the code is running in the browser or node.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -31,6 +31,9 @@
     "is browser node"
   ],
   "author": "Dineshkumar Pandiyan <flexdinesh@gmail.com>",
+  "contributors": [
+    "Daniel Wang <daniel.liberated@gmail.com> (https://github.com/dan1wang/)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/flexdinesh/browser-or-node/issues"
