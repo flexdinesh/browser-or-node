@@ -1,7 +1,5 @@
 import { assert } from 'chai';
-import { isBrowser, isWebBrowser, isNode } from '../src';
-
-console.log(isNode);
+import { isBrowser, isWebWorker, isNode } from '../src';
 
 describe('Browser or Node.js', () => {
 
@@ -15,7 +13,7 @@ describe('Browser or Node.js', () => {
   });
 
   it('should check web worker env', () => {
-    assert(isNode === true, 'isWebWorker didn\'t work :(');
+    assert(isWebWorker === false, 'isWebWorker didn\'t work :(');
   });
 
 });
