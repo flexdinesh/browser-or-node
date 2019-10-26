@@ -3,6 +3,7 @@
   "version": "1.3.0",
   "description": "Check where the code is running in the browser or node.js",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib",
     "test": "npm run cover",
@@ -11,7 +12,7 @@
     "test:examples": "node examples/",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover node_modules/mocha/bin/_mocha -- --require babel-core/register --recursive",
     "lint": "eslint src",
-    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --copy-files",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "files": [
