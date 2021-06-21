@@ -6,11 +6,11 @@ const app = express();
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/static', express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(req, res) {
+app.get('/', function(_req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/worker.js', function(req, res) {
+app.get('/worker.js', function(_req, res) {
     res.sendFile(path.join(__dirname + '/worker.js'));
 });
 
@@ -19,11 +19,11 @@ app.get('/worker.js', function(req, res) {
     res.sendFile(path.join(__dirname + '../../src/index.js'));
 });
 */
-app.get('/index.js', function(req, res) {
+app.get('/index.js', function(_req, res) {
     res.sendFile(path.join(__dirname + '/index.js'));
 });
 
-app.get('/browser-or-node.js', function(req, res) {
+app.get('/browser-or-node.js', function(_req, res) {
     res.sendFile(path.join(__dirname + '../../src/index.js'));
 });
 
