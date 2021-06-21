@@ -18,6 +18,6 @@ const isNode =
   process.versions != null &&
   process.versions.node != null;
 
-onmessage = function(e) {
+onmessage = function(_e) {
   postMessage( [isBrowser, isWebWorker, isNode] );
 }
