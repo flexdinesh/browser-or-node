@@ -1,10 +1,13 @@
 import { assert } from 'chai';
-import { isBrowser, isWebBrowser, isNode } from '../src';
+import { isBrowser, isWebBrowser, isNode, isDeno, isJsDom } from '../src';
 
-console.log(isNode);
+console.log('Browser?', isBrowser);
+console.log('Node?', isNode);
+console.log('Web browser?', isWebBrowser);
+console.log('JS Dom?', isJsDom);
+console.log('Deno?', isDeno);
 
 describe('Browser or Node.js', () => {
-
   it('should check node env', () => {
     assert(isNode === true, 'isNode didn\'t work :(');
   });
@@ -17,5 +20,4 @@ describe('Browser or Node.js', () => {
   it('should check web worker env', () => {
     assert(isNode === true, 'isWebWorker didn\'t work :(');
   });
-
 });

@@ -15,7 +15,8 @@ if (window.Worker) {
 	const myWorker = new Worker("worker.js");
 
 	myWorker.onmessage = function(e) {
-		let res = e.data;
+		const _res = e.data;
+		
 		console.log('Web worker reports:');
 		console.log('  isBrowser: ' + e.data[0]);
 		console.log('  isWebWorker: ' + e.data[1]);

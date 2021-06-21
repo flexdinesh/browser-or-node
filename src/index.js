@@ -17,10 +17,12 @@ const isNode = typeof process !== 'undefined'
  * @see https://github.com/jsdom/jsdom/issues/1537
  */
 /* eslint-disable no-undef */
-const isJsDom = () => (typeof window !== 'undefined' && window.name === 'nodejs')
+const isJsDom = (() => (typeof window !== 'undefined' && window.name === 'nodejs')
   || navigator.userAgent.includes('Node.js')
-  || navigator.userAgent.includes('jsdom');
+  || navigator.userAgent.includes('jsdom'))();
+
+const isDeno = typeof Deno !== 'undefined' && typeof Deno.core !== 'undefined';
 
 export {
-  isBrowser, isWebWorker, isNode, isJsDom
+  isBrowser, isWebWorker, isNode, isJsDom, isDeno
 };
