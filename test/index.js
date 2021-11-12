@@ -1,11 +1,13 @@
 import { assert } from "chai";
-import { isBrowser, isWebBrowser, isNode, isDeno, isJsDom } from "../src";
+import { isBrowser, isNode, isWebWorker, isDeno, isJsDom } from "../src";
 
-console.log("Browser?", isBrowser);
-console.log("Node?", isNode);
-console.log("Web browser?", isWebBrowser);
-console.log("JS Dom?", isJsDom);
-console.log("Deno?", isDeno);
+console.log({
+  isBrowser,
+  isNode,
+  isWebWorker,
+  isJsDom,
+  isDeno,
+});
 
 describe("Browser or Node.js", () => {
   it("should check node env", () => {

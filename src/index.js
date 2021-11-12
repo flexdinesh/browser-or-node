@@ -1,15 +1,15 @@
 const isBrowser =
   typeof window !== "undefined" && typeof window.document !== "undefined";
 
-const isWebWorker =
-  typeof self === "object" &&
-  self.constructor &&
-  self.constructor.name === "DedicatedWorkerGlobalScope";
-
 const isNode =
   typeof process !== "undefined" &&
   process.versions != null &&
   process.versions.node != null;
+
+const isWebWorker =
+  typeof self === "object" &&
+  self.constructor &&
+  self.constructor.name === "DedicatedWorkerGlobalScope";
 
 /**
  * @see https://github.com/jsdom/jsdom/releases/tag/12.0.0
