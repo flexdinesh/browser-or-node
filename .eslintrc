@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": "eslint-config-prettier",
   "env": {
     "mocha": true
   },
