@@ -15,10 +15,11 @@ const isNode =
  * @see https://github.com/jsdom/jsdom/releases/tag/12.0.0
  * @see https://github.com/jsdom/jsdom/issues/1537
  */
-const isJsDom = (() =>
+const isJsDom =
   (typeof window !== "undefined" && window.name === "nodejs") ||
-  navigator.userAgent.includes("Node.js") ||
-  navigator.userAgent.includes("jsdom"))();
+  (typeof navigator !== "undefined" &&
+    (navigator.userAgent.includes("Node.js") ||
+      navigator.userAgent.includes("jsdom")));
 
 const isDeno = typeof Deno !== "undefined" && typeof Deno.core !== "undefined";
 
