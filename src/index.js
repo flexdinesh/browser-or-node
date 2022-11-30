@@ -21,6 +21,9 @@ const isJsDom =
     (navigator.userAgent.includes("Node.js") ||
       navigator.userAgent.includes("jsdom")));
 
-const isDeno = typeof Deno !== "undefined" && typeof Deno.core !== "undefined";
+const isDeno =
+  typeof Deno !== "undefined" &&
+  typeof Deno.version !== "undefined" &&
+  typeof Deno.version.deno !== "undefined";
 
 export { isBrowser, isWebWorker, isNode, isJsDom, isDeno };
