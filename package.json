@@ -1,6 +1,6 @@
 {
   "name": "browser-or-node",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Check where the code is running in the browser or node.js",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
