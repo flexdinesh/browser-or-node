@@ -38,6 +38,10 @@ if (isJsDom) {
 if (isDeno) {
   // do deno only stuff
 }
+
+if (isBun) {
+  // do bun only stuff
+}
 ```
 
 ES5 style import
