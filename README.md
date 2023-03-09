@@ -17,7 +17,7 @@ $ npm install --save browser-or-node
 ES6 style import
 
 ```js
-import { isBrowser, isNode, isWebWorker, isJsDom, isDeno } from "browser-or-node";
+import { isBrowser, isNode, isWebWorker, isJsDom, isDeno, isBun } from "browser-or-node";
 
 if (isBrowser) {
   // do browser only stuff
@@ -63,6 +63,10 @@ if (jsEnv.isJsDom) {
 
 if (jsEnv.isDeno) {
   // do deno only stuff
+}
+
+if (jsEnv.isBun) {
+  // do bun only stuff
 }
 ```
 

@@ -26,4 +26,6 @@ const isDeno =
   typeof Deno.version !== "undefined" &&
   typeof Deno.version.deno !== "undefined";
 
-export { isBrowser, isWebWorker, isNode, isJsDom, isDeno };
+const isBun = typeof Bun !== "undefined" && typeof Bun.version !== "undefined";
+
+export { isBrowser, isWebWorker, isNode, isJsDom, isDeno, isBun };

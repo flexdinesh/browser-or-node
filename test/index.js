@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import { isBrowser, isNode, isWebWorker, isDeno, isJsDom } from "../src";
+import { isBrowser, isNode, isWebWorker, isDeno, isJsDom, isBun } from "../src";
 
 console.log({
   isBrowser,
@@ -7,6 +7,7 @@ console.log({
   isWebWorker,
   isJsDom,
   isDeno,
+  isBun,
 });
 
 describe("Browser or Node.js", () => {
