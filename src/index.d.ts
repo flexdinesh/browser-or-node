@@ -3,3 +3,4 @@ export declare const isWebWorker: boolean;
 export declare const isNode: boolean;
 export declare const isJsDom: boolean;
 export declare const isDeno: boolean;
+export declare const isHappyDom: boolean;

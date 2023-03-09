@@ -38,6 +38,10 @@ if (isJsDom) {
 if (isDeno) {
   // do deno only stuff
 }
+
+if (isHappyDom) {
+  // do happy-dom only stuff
+}
 ```
 
 ES5 style import
@@ -63,6 +67,10 @@ if (jsEnv.isJsDom) {
 
 if (jsEnv.isDeno) {
   // do deno only stuff
+}
+
+if (jsEnv.isHappyDom) {
+  // do happy DOM only stuff
 }
 ```
 
