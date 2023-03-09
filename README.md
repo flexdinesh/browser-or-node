@@ -70,7 +70,7 @@ if (jsEnv.isDeno) {
 }
 
 if (jsEnv.isHappyDom) {
-  // do deno only stuff
+  // do happy DOM only stuff
 }
 ```
 
