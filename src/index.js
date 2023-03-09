@@ -21,9 +21,15 @@ const isJsDom =
     (navigator.userAgent.includes("Node.js") ||
       navigator.userAgent.includes("jsdom")));
 
+/**
+ * @see https://github.com/capricorn86/happy-dom/discussions/481
+ */
+const isHappyDom =
+  typeof window !== "undefined" && typeof navigator !== "undefined" && typeof window.happyDOM !== "undefined";
+
 const isDeno =
   typeof Deno !== "undefined" &&
   typeof Deno.version !== "undefined" &&
   typeof Deno.version.deno !== "undefined";
 
-export { isBrowser, isWebWorker, isNode, isJsDom, isDeno };
+export { isBrowser, isWebWorker, isNode, isJsDom, isDeno, isHappyDom };
