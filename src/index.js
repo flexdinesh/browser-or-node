@@ -18,8 +18,8 @@ const isWebWorker =
 const isJsDom =
   (typeof window !== "undefined" && window.name === "nodejs") ||
   (typeof navigator !== "undefined" &&
-    (navigator.userAgent.includes("Node.js") ||
-      navigator.userAgent.includes("jsdom")));
+    (navigator.userAgent?.includes("Node.js") ||
+      navigator.userAgent?.includes("jsdom")));
 
 const isDeno =
   typeof Deno !== "undefined" &&
