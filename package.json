@@ -1,6 +1,6 @@
 {
   "name": "browser-or-node",
-  "version": "3.0.0",
+  "version": "3.0.0-pre.0",
   "description": "Check in which environment the code is running - browser/node.js/webworker/jsdom/deno",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

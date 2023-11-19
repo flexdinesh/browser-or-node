@@ -1,7 +1,7 @@
 const isBrowser: boolean =
   typeof window !== "undefined" && typeof window.document !== "undefined";
 
-const isNode =
+const isNode: boolean =
   // @ts-expect-error
   typeof process !== "undefined" &&
   // @ts-expect-error
