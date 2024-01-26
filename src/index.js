@@ -26,6 +26,8 @@ const isDeno =
   typeof Deno.version !== "undefined" &&
   typeof Deno.version.deno !== "undefined";
 
-const isBun = typeof Bun !== "undefined" && typeof Bun.version !== "undefined";
+
+/** @see {@link https://bun.sh/guides/util/detect-bun} */
+const isBun = typeof process !== "undefined" && process.versions != null && process.versions.bun != null;
 
 export { isBrowser, isWebWorker, isNode, isJsDom, isDeno, isBun };
