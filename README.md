@@ -7,7 +7,7 @@ Check in which environment the code is running - browser/node.js/webworker/jsdom
 
 
 
-> [!NOTE]  
+> [!NOTE]
 > To help release v3.0.0, please try [v3.0.0-pre.0](https://github.com/flexdinesh/browser-or-node/releases/tag/3.0.0-pre.0) and let us know if you run into issues.
 
 ## Install
@@ -22,7 +22,7 @@ Import the checks and use it in your code. Works with both ESM and CJS imports.
 
 ```js
 import * as jsEnv from "browser-or-node";
-// import { isBrowser, isNode, isWebWorker, isJsDom, isDeno } from "browser-or-node";
+// import { isBrowser, isNode, isWebWorker, isJsDom, isDeno, isBun } from "browser-or-node";
 // const jsEnv = require("browser-or-node");
 
 if (jsEnv.isBrowser) {
@@ -43,6 +43,10 @@ if (jsEnv.isJsDom) {
 
 if (jsEnv.isDeno) {
   // do deno only stuff
+}
+
+if (jsEnv.isBun) {
+  // do bun only stuff
 }
 ```
 
