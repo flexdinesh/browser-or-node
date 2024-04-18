@@ -5,11 +5,6 @@
 
 Check in which environment the code is running - browser/node.js/webworker/jsdom/deno.
 
-
-
-> [!NOTE]
-> To help release v3.0.0, please try [v3.0.0-pre.0](https://github.com/flexdinesh/browser-or-node/releases/tag/3.0.0-pre.0) and let us know if you run into issues.
-
 ## Install
 
 ```
