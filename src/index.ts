@@ -33,6 +33,7 @@ const isDeno: boolean =
 
 
 /** @see {@link https://bun.sh/guides/util/detect-bun} */
+  // @ts-expect-error
 const isBun = typeof process !== "undefined" && process.versions != null && process.versions.bun != null;
 
 export { isBrowser, isWebWorker, isNode, isJsDom, isDeno, isBun };
